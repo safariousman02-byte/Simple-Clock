@@ -5,6 +5,9 @@ const btn = document.getElementById('btn');
 
 function getTime() {
 
+    time.textContent = 'Loading Time...'
+    date.textContent = 'Loading Date...'
+
     fetch('https://worldtimeapi.org/api/timezone/Africa/Lagos')
         .then(res => res.json())
         .then(data => {
